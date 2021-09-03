@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@300&family=Bebas+Neue&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+}
+
+.title {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 1em;
+}
+
+.title > h1 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3em;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    height: 340px;
+    max-width: 600px;
+    background-color: aquamarine;
+    padding: 2em;
+    align-items: center;
+    border-radius: 40px;
+
+}
+
+.box-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box-input > label {
+    padding-bottom: 0.7em;
+    font-family: 'Alumni Sans', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.box-input > input[type=text] {
+    width: 50px;
+    height: 25px;
+}   
+
+
+.box-input, .box-button, .box-resultado {
+    margin: 0.5em;
+}
+
+.box-resultado p{
+    text-align: center;
+    font-family: 'Alumni Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IMC</title>
+    <link rel="stylesheet" href="./style.css">
+    <script>
+
+        let imc = () => {
+            let altura = document.getElementById('altura');
+            let peso = document.getElementById('peso');
+
+            let imcTotal = parseFloat(peso.value/Math.pow(altura.value, 2));
+
+            document.getElementById('imcResultado').innerHTML = (imcTotal.toFixed(1));
+        }
+
+        
+
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>Calculadora de IMC</h1>
+        </div>
+
+        <div class="box">
+            <div class="box-input">
+                <label for="altura">Ingrese su altura</label>
+                <input type="text" name="altura" id="altura" placeholder="ej.: 1.70">
+            </div>
+            <div class="box-input">
+                <label for="peso">Ingrese su peso</label>
+                <input type="text" name="peso" id="peso" placeholder="ej.: 65">
+            </div>
+            <button class="box-button" onclick="imc()">Calcular</button>
+            <div class="box-resultado">
+                <p>Su índice de masa corporal es: </p>
+                <p id="imcResultado"></p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
